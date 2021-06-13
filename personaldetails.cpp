@@ -48,7 +48,7 @@ QString PersonalDetails::toString() {
 
 void PersonalDetails::write(QJsonObject &json) {
     json["givenName1"] = m_givenName1;
-    json["givenName1"] = m_givenName2;
+    json["givenName2"] = m_givenName2;
     json["surname"] = m_surname;
     json["preferredName"] = m_preferredName;
     QJsonObject addrObject;

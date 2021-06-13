@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "stringlistmodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,7 +20,12 @@ public:
 private slots:
     void on_btnSave_clicked();
 
+    void on_btnAddSkill_clicked();
+
+    void on_btnAddAchievement_clicked();
+
 private:
     Ui::MainWindow *ui;
+    StringListModel *achievementModel, *skillsModel;
 };
 #endif // MAINWINDOW_H

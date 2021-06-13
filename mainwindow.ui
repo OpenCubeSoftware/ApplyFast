@@ -292,10 +292,10 @@
          <item row="1" column="0">
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QLineEdit" name="lineEdit_2"/>
+            <widget class="QLineEdit" name="txtSkill"/>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="btnAddSkill">
              <property name="text">
               <string>Add</string>
              </property>
@@ -319,10 +319,10 @@
          <item row="1" column="1">
           <layout class="QHBoxLayout" name="horizontalLayout_7">
            <item>
-            <widget class="QLineEdit" name="lineEdit_3"/>
+            <widget class="QLineEdit" name="txtAchievement"/>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="btnAddAchievement">
              <property name="text">
               <string>Add</string>
              </property>
@@ -338,10 +338,10 @@
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QListView" name="listView"/>
+          <widget class="QListView" name="skillsListView"/>
          </item>
          <item row="2" column="1">
-          <widget class="QListView" name="listView_2"/>
+          <widget class="QListView" name="achievementsListView"/>
          </item>
         </layout>
        </widget>
@@ -535,15 +535,14 @@ p, li { white-space: pre-wrap; }
   <tabstop>chkEastAsian</tabstop>
   <tabstop>chkPreferWest</tabstop>
   <tabstop>textPersonalProfile</tabstop>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>lineEdit_3</tabstop>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>listView</tabstop>
-  <tabstop>listView_2</tabstop>
+  <tabstop>txtSkill</tabstop>
+  <tabstop>btnAddSkill</tabstop>
+  <tabstop>txtAchievement</tabstop>
+  <tabstop>btnAddAchievement</tabstop>
+  <tabstop>skillsListView</tabstop>
+  <tabstop>achievementsListView</tabstop>
   <tabstop>btnSave</tabstop>
  </tabstops>
  <resources/>
  <connections/>
 </ui>
-

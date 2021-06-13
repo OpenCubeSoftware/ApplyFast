@@ -16,7 +16,9 @@ ApplicantDetails::ApplicantDetails(QString &name1, QString &name2, QString &fami
 }
 
 void ApplicantDetails::write(QJsonObject &json) {
-    PersonalDetails::write(json);
+    QJsonObject personalDetailsObj;
+    PersonalDetails::write(personalDetailsObj);
+    json["personalDetails"] = personalDetailsObj;
     json["linkedIn"] = m_linkedInProfile;
     json["personalProfile"] = m_personalProfile;
     json["website"] = m_website;
