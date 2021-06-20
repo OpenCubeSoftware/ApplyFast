@@ -24,7 +24,7 @@
     <item>
      <widget class="QTabWidget" name="tabLayout">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tabPersonalDetails">
        <attribute name="title">
@@ -390,6 +390,255 @@ p, li { white-space: pre-wrap; }
        <attribute name="title">
         <string>Work Experience</string>
        </attribute>
+       <widget class="QListView" name="workExpListView">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>256</width>
+          <height>591</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>0</y>
+          <width>411</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="5" column="1" rowspan="2" colspan="3">
+          <widget class="QComboBox" name="cmbEndMonth">
+           <item>
+            <property name="text">
+             <string>January</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>February</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>March</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>April</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>May</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>June</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>July</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>August</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>September</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>October</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>November</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>December</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QComboBox" name="cmbStartYear"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>Duties</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Job Title</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QComboBox" name="cmbYearTo"/>
+         </item>
+         <item row="3" column="1" colspan="3">
+          <widget class="QComboBox" name="cmbStartMonth">
+           <item>
+            <property name="text">
+             <string>January</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>February</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>March</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>April</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>May</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>June</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>July</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>August</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>September</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>October</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>November</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>December</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QPushButton" name="btnAddDuty">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Add</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" rowspan="2">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>Date Ended</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1" colspan="4">
+          <widget class="QListView" name="listView"/>
+         </item>
+         <item row="8" column="1" colspan="4">
+          <widget class="QTextEdit" name="textEdit"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Date Started</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>Company</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="4">
+          <widget class="QLineEdit" name="txtLocation"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>Location</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="4">
+          <widget class="QLineEdit" name="txtCompanyName"/>
+         </item>
+         <item row="0" column="1" colspan="4">
+          <widget class="QLineEdit" name="txtJobTitle"/>
+         </item>
+         <item row="9" column="2" colspan="3">
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item row="7" column="4">
+          <widget class="QCheckBox" name="checkBox">
+           <property name="text">
+            <string>Still In Role</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
       <widget class="QWidget" name="tabEdu">
        <attribute name="title">

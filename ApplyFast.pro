@@ -14,6 +14,8 @@ SOURCES += \
     cv.cpp \
     datestartend.cpp \
     educationitem.cpp \
+    engine.cpp \
+    experience.cpp \
     jobitem.cpp \
     jobpersondetails.cpp \
     main.cpp \
@@ -28,6 +30,8 @@ HEADERS += \
     cv.h \
     datestartend.h \
     educationitem.h \
+    engine.h \
+    experience.h \
     jobitem.h \
     jobpersondetails.h \
     mainwindow.h \

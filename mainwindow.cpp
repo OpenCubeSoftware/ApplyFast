@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QStandardPaths>
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
@@ -16,6 +17,14 @@ MainWindow::MainWindow(QWidget *parent)
     skillsModel = new StringListModel(this);
     ui->skillsListView->setModel(skillsModel);
     ui->achievementsListView->setModel(achievementModel);
+    int currentYear = QDate::currentDate().year();
+    ui->cmbStartYear->setInsertPolicy(QComboBox::InsertAfterCurrent);
+    int countYear = currentYear;
+    while (countYear >= 1950) {
+        qDebug() << QString::number(countYear);
+        ui->cmbStartYear->addItem(QString::number(countYear));
+        countYear--;
+    }
 
 }
 
